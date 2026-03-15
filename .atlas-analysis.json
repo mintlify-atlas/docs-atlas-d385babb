@@ -1,0 +1,66 @@
+{
+  "projectType": "saas",
+  "projectName": "Hadat API",
+  "projectDescription": "A Laravel-based event management SaaS API with token authentication via Laravel Sanctum.",
+  "theme": "sequoia",
+  "primaryColor": "#F53003",
+  "lightColor": "#fff2f2",
+  "darkColor": "#1D0002",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart", "installation"]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": ["concepts/authentication", "concepts/events", "concepts/users"]
+          },
+          {
+            "group": "Guides",
+            "pages": ["guides/setup", "guides/configuration", "guides/deployment"]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["api/overview", "api/authentication"]
+          },
+          {
+            "group": "Endpoints",
+            "pages": ["api/users", "api/events", "api/tokens"]
+          },
+          {
+            "group": "Resources",
+            "pages": ["api/errors", "api/rate-limiting"]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Token-based API authentication via Laravel Sanctum",
+    "Event management for SaaS applications",
+    "User registration, login, and session management",
+    "Personal access tokens with configurable abilities and expiry",
+    "MySQL database with queue and cache support",
+    "Built on Laravel 12 with PHP 8.2+"
+  ],
+  "publicApiSurface": [
+    "POST /api/register - User registration",
+    "POST /api/login - User authentication and token issuance",
+    "POST /api/logout - Token revocation",
+    "GET /api/user - Authenticated user profile",
+    "GET /api/events - List events",
+    "POST /api/events - Create event",
+    "GET /api/events/{id} - Get event details",
+    "PUT /api/events/{id} - Update event",
+    "DELETE /api/events/{id} - Delete event"
+  ]
+}
